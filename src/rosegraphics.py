@@ -712,7 +712,7 @@ class _ShapeWithCenter(_Shape):
         # Clone the   center   argument, so that if the caller
         # mutates the argument, it does NOT affect this Shape.
         super().__init__(method_for_drawing)
-        self.center = center.clone()
+        self.center = center.clone
 
     def move_by(self, dx, dy):
         """
@@ -1182,8 +1182,8 @@ class Line(_Shape, _ShapeWithThickness):
         super()._initialize_options()
 
         # The other instance variables are the endpoints:
-        self.start = start.clone()
-        self.end = end.clone()
+        self.start = start.clone
+        self.end = end.clone
 
     def __repr__(self):
         """ Returns a string representation of this Line. """

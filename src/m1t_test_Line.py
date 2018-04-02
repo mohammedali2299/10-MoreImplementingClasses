@@ -413,7 +413,7 @@ def run_test_get_number_of_clones():
     line2.reverse()
     line2.x = m1.Point(0, 0)
     line3 = line1.clone()
-    line4 = line3.clone()
+    line4 = line3.clone
     line5 = line1.clone()
 
     expected = 3
@@ -436,7 +436,7 @@ def run_test_get_number_of_clones():
     actual = line5.get_number_of_clones()
     evaluate_test(expected, actual, 'Testing line5, not yet cloned:')
 
-    line3 = line5.clone()
+    line3 = line5.clone
 
     expected = 0
     actual = line3.get_number_of_clones()
